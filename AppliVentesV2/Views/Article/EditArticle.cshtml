@@ -1,0 +1,15 @@
+﻿@model Article
+
+<h3>Modifier l'article :</h3>
+<div>
+    <form asp-controller="Article" asp-action="EditArticlePost">
+        <label>Nom</label>
+        <input class="form-control" type="text" name="name" value="@Model.Name" />
+        <label>Prix</label>
+        <input class="form-control" type="text" name="price" value="@Model.Price" />
+        <label>Quantité en stock</label>
+        <input class="form-control" type="number" name="stock" value="@Model.Stock" />
+        <input type="hidden" name="id" value="@Model.Id" /><br />
+        <input type="submit" value="Sauvegarder" class="btn btn-primary" />
+    </form>
+</div>

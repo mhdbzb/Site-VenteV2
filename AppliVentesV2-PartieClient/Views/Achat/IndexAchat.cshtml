@@ -1,0 +1,49 @@
+﻿@model List<AppliVentes.Models.Article>
+
+<style>
+    td, tr, th {
+        padding: 10px; /* Add padding for better visibility */
+        box-shadow: 0 0 5px fuchsia, 0 0 10px fuchsia;
+        border: 1px solid #ddd;
+    }
+</style>
+
+
+<h1>Articles</h1>
+
+<table class="table table-hover table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th style="text-align:end">Prix</th>
+            <th style="text-align:end">Quantité en stock</th>
+            <th style="text-align:end">Quantité désirée</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var article in Model)
+        {
+            <form asp-controller="Achat" asp-action="AjouterArticle" 
+             asp-route-idArticle="@article.Id">
+            <tr>
+                <td>@Html.DisplayFor(modelItem => article.Name)</td>
+                <td align="right">@Html.DisplayFor(modelItem => article.Price)</td>
+                <td align="right">@Html.DisplayFor(modelItem => article.Stock)</td>
+                <td align="right">
+                    <input class="form-control" type="number" name="stock" 
+                     min="0" max="@article.Stock" />
+                </td>
+                <td>
+                    <input type="submit" name="ajouter" value="Ajouter au panier" />
+                    <input type="hidden" name="idPanier"/>
+                </td>
+            </tr>
+            </form>
+        }
+
+    </tbody>
+</table>
+<p>
+    <a asp-controller="Achat" asp-action="AfficherPanier" asp-route-idPanier="idPanier">Voir mon panier</a>
+</p>

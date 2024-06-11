@@ -1,0 +1,14 @@
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\bin\Debug\net8.0\AppliVentes.Models.deps.json
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\bin\Debug\net8.0\AppliVentes.Models.dll
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\bin\Debug\net8.0\AppliVentes.Models.pdb
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.AssemblyInfoInputs.cache
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.AssemblyInfo.cs
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.csproj.CoreCompileInputs.cache
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.dll
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\refint\AppliVentes.Models.dll
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.pdb
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\ref\AppliVentes.Models.dll
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\bin\Debug\net8.0\AppliVentes.Models.runtimeconfig.json
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.csproj.AssemblyReference.cache
+C:\Users\mehda\Documents\GitHub\AppliVentesV2\AppliVentes.Models\obj\Debug\net8.0\AppliVentes.Models.genruntimeconfig.cache

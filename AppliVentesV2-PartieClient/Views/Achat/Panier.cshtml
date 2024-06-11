@@ -1,0 +1,41 @@
+﻿@model List<AppliVentes.Models.Article>
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th style="text-align:end">Prix</th>
+            <th style="text-align:end">Quantité en stock</th>
+            <th style="text-align:end">Quantité désirée</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var article in Model)
+        {
+                <form asp-controller="Achat" asp-action="AjouterArticle" 
+                 asp-route-id="@article.Id">
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => article.Name)</td>
+                    <td align="right">@Html.DisplayFor(modelItem => article.Price)</td>
+                    <td align="right">@Html.DisplayFor(modelItem => article.Stock)</td>
+                    <td align="right">
+                        <input class="form-control" type="number" name="stock" 
+                         min="0" max="@article.Stock" />
+                    </td>
+                    <td>
+                        <input type="submit" name="ajouter" value="Ajouter au panier" />
+                        <input type="hidden" name="idPanier"/>
+                    </td>
+                </tr>
+                </form>
+        }
+
+    </tbody>
+</table>
+<p>
+    <a asp-controller="Achat" asp-action="Index">Retour</a>
+</p>
+ 

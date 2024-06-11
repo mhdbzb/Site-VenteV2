@@ -1,0 +1,50 @@
+﻿@model List<Article>
+
+<style>
+td {
+    padding: 10px; /* Add padding for better visibility */
+    box-shadow: 0 0 5px fuchsia, 0 0 10px fuchsia;
+    border: 1px solid #ddd;
+
+}
+</style>
+
+<h1>Gestion des articles</h1>
+
+<div>
+    <table class="table table-bordered border-primary table-hover">
+        <thead>
+            <tr class="border-primary">
+                <th>Nom</th>
+                <th style="text-align:end">Prix</th>
+                <th style="text-align:end">Quantité en stock</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model)
+            {
+                <tr class="border-primary">
+                    <td>@article.Name</td>
+                    <td align ="right">@Html.DisplayFor(modelItem => article.Price)</td>
+                    <td align="right">@article.Stock</td>
+                    <td align="center">
+                        <a asp-controller="Article" asp-action="EditArticle" asp-route-id=@article.Id >
+                            <img src="~/edit-1-svgrepo-com.svg" title="Modifier" alt="Modifier_Icone" width="30px" class="filter-svg" />
+                        </a> |
+                        <a asp-controller="Article" asp-action="DeleteArticle" asp-route-id=@article.Id>
+                            <img src="~/delete-2-svgrepo-com.svg" title="Supprimer" alt="Supprimer_Icone" width="30px" class="filter-svg" />
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div style="display:flex; flex-direction: row; justify-content: left; align-items: center">
+    <a asp-controller="Article" asp-action="CreateArticle">
+        <img src="~/add-square-svgrepo-com.svg" title="Ajouter" alt="Ajouter_Icone" width="20px" class="filter-svg" />
+        <span style="font-family:'ROG Fonts'">Nouvel article</span>
+    </a>
+</div>

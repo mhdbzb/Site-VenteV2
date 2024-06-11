@@ -1,0 +1,173 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        color: white;
+        text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow, 0 0 80px yellow;
+        transition-duration: 0.5s;
+    }
+
+body {
+    background: linear-gradient(133deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: aliceblue;
+    font-family: Arial;
+    margin-bottom: 60px;
+}
+
+.container {
+    color: aliceblue !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Magneto;
+    color: white;
+    text-shadow: 0 0 5px fuchsia, 0 0 10px fuchsia, 0 0 20px fuchsia, 0 0 40px fuchsia, 0 0 80px fuchsia;
+}
+
+
+
+
+
+.table {
+    width: auto;
+    margin-bottom: 1rem;
+    color: aliceblue;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+    --bs-table-hover-color: white;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+}
+
+
+
+.border-primary {
+    border-color: white !important;
+    box-shadow: 0 0 5px fuchsia, 0 0 10px fuchsia;
+}
+
+ .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
+}
+
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus{
+
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: darkviolet;
+    border-color: darkviolet;
+    font-family: 'ROG Fonts';
+    box-shadow: 0 0 5px white;
+}
+
+    .btn-primary:hover {
+        color: ivory;
+        background-color: dodgerblue;
+        border-color: dodgerblue;
+        box-shadow: 0 0 5px aquamarine, 0 0 10px aquamarine, 0 0 20px aquamarine;
+        transition-duration: 0.5s;
+    }
+
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgb(22,1,85);
+    background: linear-gradient(137deg, rgba(22,1,85,1) 0%, rgba(38,0,37,1) 100%);
+    text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+}
+
+
+
+.navbar-brand {
+    color: white !important
+}
+
+    .navbar-brand:visited {
+        color: white !important
+    }
+
+.navbar-default-color {
+    color: white !important
+}
+
+.navbar-inverse {
+    color: white !important
+}
+
+.nav-link {
+    color: white !important
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+}
+
+
+.filter-svg {
+    filter: invert(90%) sepia(21%) saturate(108%) hue-rotate(181deg) brightness(103%) contrast(99%);
+}
+
+.form-control {
+    display: block;
+    width: auto;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+[type="number"] {
+   width: auto; 
+}
+
+
+
+
+
+
+
+
+
+

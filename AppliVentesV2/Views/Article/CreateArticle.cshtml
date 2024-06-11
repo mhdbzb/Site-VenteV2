@@ -1,0 +1,12 @@
+﻿<h3>Nouvel article :</h3>
+<div>
+    <form asp-controller="Article" asp-action="CreateArticlePost">
+        <label>Nom</label>
+        <input class="form-control" type="text" name="name" size="10" />
+        <label>Prix</label>
+        <input class="form-control" type="text" name="price" size="10" />
+        <label>Quantité en stock</label>
+        <input class="form-control" type="number" name="stock" /><br />
+        <input type="submit" value="Creer" class="btn btn-primary" />
+    </form>
+</div>
